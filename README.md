@@ -5,9 +5,7 @@ Simple game in which you guess a randomised number, the game will automatically 
 just enter a number from 1 - 100 and press submit, you will then get a feedback message telling you if your guess was too high or too low, just repeat until you guess correctly!
 
 # built by - 
-Mohin K
-Edd G
+Mohin K & Edd G
 
 # Team managed by - 
-Maryam M
-Sinead S
+Maryam M & Sinead S
