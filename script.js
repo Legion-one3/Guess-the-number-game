@@ -24,7 +24,7 @@ function GuessTheNumber(event) {
     inputBox.style.display = "none"
     playAgainButton.style.display = "block";
     playAgainButton.style.margin = "auto";
-    playAgainButton.innerText = "would you like to play again? clcik here"
+    playAgainButton.innerText = "would you like to play again? click here"
     // Generate a new random number for the next game
     randomNumber = Math.floor(Math.random() * 100) + 1;
     userScore = 100; // Reset the score
