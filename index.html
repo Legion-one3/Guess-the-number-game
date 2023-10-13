@@ -11,7 +11,7 @@
 <body>
     
   <div class="audio-container">
-    <audio controls autoplay loop >
+    <audio autoplay loop >
       <source src="music/get-funky.mp3" type="audio/mpeg">
       <source src="music/get-funky.ogg" type="audio/ogg"> 
     </audio>
@@ -21,7 +21,7 @@
   <form onsubmit = "GuessTheNumber(event)">
     <em><p id = "introduction">I'm thinking of a number from 1 to 100...Can you guess what number I'm thinking of?</p></em>
     <input name = "guess" type = "number" id = "ip" placeholder= "please enter a number" required>
-    <p id = "recentguess"></p>
+    <em><p id = "recentguess"></p></em>
     <em><p id = "score">score - 100</p></em>
     <button class="buttons submit" id="sb"><i>Submit guess</i></button>
     
