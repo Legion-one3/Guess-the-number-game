@@ -2,10 +2,8 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let userScore = 100;
 let attempt = 0;
-
 function GuessTheNumber(event) {
   event.preventDefault();
-
   let form = event.target;
   let answer = parseInt(form.guess.value); // Convert the input value to an integer
   let feedback = document.getElementById("feedbackmessage");
@@ -26,7 +24,6 @@ function GuessTheNumber(event) {
     inputBox.style.display = "none"
     playAgainButton.style.display = "block";
     playAgainButton.style.margin = "auto";
-
     playAgainButton.innerText = "would you like to play again? clcik here"
     // Generate a new random number for the next game
     randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -43,7 +40,6 @@ function GuessTheNumber(event) {
       currentGuess.innerText = "your most recent guess is " + form.guess.value;
       currentGuess.style = "color:purple;"
     }
-  
   else if (answer < randomNumber) {
     feedback.innerText = "Too low! Guess again";
     feedback.style.color = "red";
@@ -62,18 +58,15 @@ function GuessTheNumber(event) {
     scoreCount.innerText = "Score " + userScore;
     currentGuess.innerText = "your most recent guess is " + form.guess.value;
     currentGuess.style = "color:purple;"
-  } 
+  }
    else {feedback.innerText = "no letters or words, only numbers please";
           intromessage.innerText = "dont worry That does not count as attempt. you are still on  attempt " + (attempt);
-        
         }
-
   if (!(answer < 0 || answer > 100 )) {
     attempt += 1
   form.guess.value = ""; // Clear the input field for the next guess
 }
-}  
-
+}
 function playAgain() {
   let scoreCount = document.getElementById("score");
   let submitButton = document.getElementById("sb");
@@ -81,22 +74,19 @@ function playAgain() {
   let playAgainButton = document.getElementById("playagain");
   let feedback = document.getElementById("feedbackmessage");
   let intromessage = document.getElementById("introduction");
-
   // Reset the display properties for the elements
   scoreCount.style.display = "block";
   submitButton.style.display = "block";
   inputBox.style.display = "block";
   playAgainButton.style.display = "none";
-
   // Center the buttons
   submitButton.style.margin = "auto";
   inputBox.style.margin = "auto";
   playAgainButton.style.margin = "auto";
-
-
   // Reset the introductory message
   intromessage.innerText = "I'm thinking of a number from 1 to 100...Can you guess what number I'm thinking of?";
   intromessage.style.color = "blue";
   feedback.innerText = "";
   scoreCount.innerText = "Score " + userScore;
 }
+
