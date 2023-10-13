@@ -8,4 +8,4 @@ just enter a number from 1 - 100 and press submit, you will then get a feedback 
 Mohin K and Edd G
 
 # Team managed by - 
-Maryam M and Sinead S
+Maryam N and Sinead S
